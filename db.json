@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "email": "masdas@mail.ru",
+      "password": "$2a$10$S8d6fl.mY2rzOG/1fVgbv.zR2ldV5p4r31rcgaBs8N4bqCJb8AGW.",
+      "id": 1
+    },
+    {
+      "email": "aboba@mail.ru",
+      "password": "$2a$10$84r.asFyA8gWcnJgFOt27e9pZl1KSHFknzaCXQ9XGMav/dX3Ilay6",
+      "id": 2
+    },
+    {
+      "email": "aboba1@mail.ru",
+      "password": "$2a$10$CYxBqNk/BFiTf.2RkUjgQ.INTjj8fnceNyXmYx9bU59TR3zxRFJUy",
+      "id": 3
+    },
+    {
+      "email": "aboba21@mail.ru",
+      "password": "$2a$10$Z.cynzJGmPUDSPAcM26mmuIDnoqd8d1b2fzDccoaAS6srXB4fUiK6",
+      "id": 4
+    },
+    {
+      "email": "aboba231@mail.ru",
+      "password": "$2a$10$Rrm9ha0kIHUDv9EhgxuXh.3gAHdZVidXg8LtzG6H7blgwowFpY8VW",
+      "id": 5
+    },
+    {
+      "email": "aboba2321@mail.ru",
+      "password": "$2a$10$FM/kRnHot4D29QWnzFgHvel3vVbPXDdoOLZ/v1AD7WvReNf1QvGp2",
+      "id": 6
+    },
+    {
+      "email": "aboba23221@mail.ru",
+      "password": "$2a$10$lcxuO3Fnl2y9nstj6Rmr8OK8Pt8C/R8GIeVtaLFPAQdM/6PPwZx8.",
+      "id": 7
+    },
+    {
+      "email": "1321ewq@mail.ru",
+      "password": "$2a$10$LzosCdRKF1tIC56fY3ZGZesb02T2L...o8vQeuwNqTn24TAheFqte",
+      "id": 8
+    },
+    {
+      "email": "3424FDSF@mail.ru",
+      "password": "$2a$10$L7HQZVh0//97Kp2ocaJOQuU4fJcBt9kIaI3Gq7qbEd1wyc0Cg63K6",
+      "id": 9
+    },
+    {
+      "email": "masd2as@mail.ru",
+      "password": "$2a$10$MGmZ.NVhpxSsaqbNcs7Vr.flI0wP0TkAYhrEqPlXcz5jeijBoJ5CO",
+      "id": 10
+    }
+  ]
+}

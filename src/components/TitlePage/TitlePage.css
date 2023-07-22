@@ -1,0 +1,43 @@
+.titlePage{
+    width: 80vw;
+    min-height: 75.2vh;
+    margin: 30px auto 0;
+}
+.flex{
+    display: flex;
+}
+.titleLabel{
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+.titleDescription{
+    width: 40vw;
+}
+
+.imgDesc{
+    justify-content: space-around;
+}
+.ratingBlock{
+    display: flex;
+    width: 40vw;
+    margin: 20px auto 0;
+    justify-content: space-around;
+}
+.watchBlock{
+    margin: 20px auto 0;
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+}
+.smallInfo{
+    margin: 20px 0 0 0;
+    width: 40vw;
+    justify-content: space-around;
+}
+.alignCentre{
+    text-align: center;
+}
+.personsBlock{
+    margin: 30px 0 0 0;
+    width: 80vw;
+}
