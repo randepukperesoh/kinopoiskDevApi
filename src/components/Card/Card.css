@@ -1,0 +1,37 @@
+.cardWrapper{
+    height: 250px;
+    width: 150px;
+    position: relative;
+    color: black;
+}
+.cardWrapper:nth-child(n+1){
+    margin: 0 0 0 30px;
+}
+.cardWrapper img{
+    margin: 0 auto;
+    border-radius: 13px;
+}
+.cardLabel{
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    margin: 10px 0 0 0;
+}
+.cardWrapper img:hover{
+    animation-duration: 0.5s;
+    animation-name: upCard;
+    width: 140px;
+    height: 210px;
+}
+@keyframes upCard {
+    from {
+        width: 130px;
+        height: 195px;
+    }
+    to{
+        width: 140px;
+        height: 210px;
+    }
+}
