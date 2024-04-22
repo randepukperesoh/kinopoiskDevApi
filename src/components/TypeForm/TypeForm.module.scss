@@ -1,0 +1,35 @@
+.filter{
+    width: 620px;
+    height: 340px;
+    background-color: #2c4464;
+    color: white;
+    border-radius: 15px;
+}
+.FilterBtn {
+    display: block;
+    width: 160px;
+    height: 35px;
+    border-radius: 5px;
+    color: black;
+    background: #ffffff;
+    margin: 30px auto;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+  @media screen and (width < 675px) {
+    .filter{
+        display: block;
+        flex-wrap: wrap;
+        height: 295px;
+        align-items: center;
+        width: 220px;
+        box-sizing: border-box;
+        margin: 0 auto 20px;
+        box-sizing: border-box;
+        padding: 10px;
+        .FilterBtn{
+            margin: 10px 0 0 0;
+        }
+    }
+  }

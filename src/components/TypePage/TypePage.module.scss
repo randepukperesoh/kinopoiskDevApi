@@ -1,0 +1,42 @@
+.filteredTitle{
+  margin: 0 auto;
+  width: 75vw;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.typePage{
+    width: 95vw;
+    margin: 10px auto 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.loaderCenter{
+   margin: 250px auto 0;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+  @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  } 
+
+  @media screen and (width < 675px) {
+    .typePage{
+      display: block;
+    }
+  }

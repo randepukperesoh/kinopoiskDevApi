@@ -1,0 +1,48 @@
+.mainPage{
+    height: 90vh;
+    position: relative;
+    .TitleWrapper{
+        position: relative;
+        top: 5%;
+        left: 3%;
+        width: 45%;
+        height: 50%;
+        background: rgb(255,255,255);
+        background: linear-gradient(140deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 79%);
+        padding: 10px 0 5px 10px;
+        box-sizing: border-box;
+        h2{
+        margin: 0;
+        }
+        div{
+            text-overflow: ellipsis;
+            white-space: wrap;
+            overflow: hidden;
+            height: 70%;
+        }
+        .moreBtn{
+            position: absolute;
+            bottom: 10px;
+            left: 15px;
+            max-width: 178px;
+            min-width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: rgb(242, 241, 250, 0.9) ;
+            padding: 10px 0 0 10px;
+            box-sizing: border-box;
+            opacity: 1;
+            
+            a{
+                color: black;
+            }
+        }
+    }
+    .sliderWrapper{
+        position: relative;
+        height: 39%;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,0.4962359943977591) 15%, rgba(194,191,191,0.29735644257703087) 50%, rgba(255,255,255,0.4990371148459384) 85%);
+        top: 5%;
+    }
+}
