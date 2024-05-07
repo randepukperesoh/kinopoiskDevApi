@@ -1,0 +1,38 @@
+.loginWrapper{
+    display: block;
+    width: 210px;
+    height: 300px;
+    margin: 50px auto 0;
+}
+.inputWrapper input{
+    box-sizing: content-box;
+    margin: 0 0 20px 0;
+    width: 200px;
+    height: 30px;
+    border-bottom: 1px solid black;
+    line-height: 1.1px;
+    padding: 5px 0 0px 0;
+}
+.inputWrapper * {
+    display: block;
+}
+.inputWrapper label{
+    text-align: center;
+    width: 208px;
+}
+.loginBtn{
+    width: 208px;
+    height: 26px;
+    border: none;
+    border-radius: 5px;
+    background: #2e6d9c;
+}
+.reg{
+    margin: 15px 0 0 0;
+    color: #000;text-align: center;
+    width: 208px;
+}
+.reg a{
+    margin: 15px 0 0 0;
+    color: #000;
+}

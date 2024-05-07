@@ -3,20 +3,26 @@ import { Link } from 'react-router-dom';
 import Spiner from '../Spiner/Spiner';
 import styles from './Main.module.scss'
 import { useEffect, useState } from 'react';
+import { ErorrPage } from '../ErorrPage/ErorrPage';
+import { Loading } from '../Loading/Loading';
 
- const Main = () => {
-    const [id, setId] = useState<number>(2001)
+ export const Main = () => {
+    const [id, setId] = useState<number>(Math.floor(Math.random()*10000))
     useEffect(()=>{setId(Math.floor(Math.random()*10000))},[])
     
-    const {data} = useGetTitleByIdQuery(id);
+    const {data, isLoading} = useGetTitleByIdQuery(id);
     const {currentData} = useGetImageByIdQuery(id)
-    
-    if (!data) return null
+    if (isLoading) return <Loading/>
+    if ( !data || !currentData ) return <ErorrPage/>
 
-    if ( !currentData) {
-        return null
-    } 
-    const url = currentData.docs[0].url ? currentData.docs[0].url : '';
+    let url = '';
+
+    if ( currentData.docs.length > 0 && currentData.docs[0].url ) {
+        console.log(currentData.docs[0])
+        url = currentData.docs[0].url
+        console.log(id, ' ', url)
+    }
+
     return(
         <>
             <div style={{ backgroundImage: `url(${url}`, backgroundSize: 'cover' }} className={styles.mainPage}>
@@ -32,4 +38,3 @@ import { useEffect, useState } from 'react';
         </>
     )
 }
-export default Main;

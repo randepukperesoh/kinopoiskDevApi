@@ -3,7 +3,7 @@ import  styles from './TitlePage.module.scss'
 import { useGetTitleByIdQuery } from '../../Api/Api'
 import PersonSpiner from '../PersonSpiner/PersonSpiner'
 
-const TitlePage = () =>{
+export const TitlePage = () =>{
     const { id } = useParams();
     const {data, isFetching} = useGetTitleByIdQuery(Number(id))
     return(
@@ -44,5 +44,3 @@ const TitlePage = () =>{
         </>
     )
 }
-
-export default TitlePage;

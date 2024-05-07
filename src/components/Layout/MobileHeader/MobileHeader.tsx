@@ -3,7 +3,12 @@ import styles from '../Layout.module.scss'
 import { Link } from "react-router-dom";
 import Hamburger from 'hamburger-react'
 
-export const MobileHeader: React.FC = () => {
+interface MobileHeaderProps {
+    logout: Function,
+    token: string | null
+}
+
+export const MobileHeader: React.FC<MobileHeaderProps> = ({token, logout}) => {
 
     const [ menu, setMenu ] = useState<boolean>(false);
 
@@ -28,10 +33,10 @@ export const MobileHeader: React.FC = () => {
                             <div className={styles.headerItem}><Link to={'page/anime'}>Аниме</Link></div>
                             <div className={styles.headerItem}><Link to={'page/animated-series'}>Мультфильмы</Link></div>
                             <div className={styles.headerItem}><Link to={'page/tv-show'}>Тв-щоу</Link></div>
+                            {token ? <div onClick={() => logout()} className={styles.headerItem}>Выйти</div> : <div className={styles.headerItem}><Link to={'login'}>Войти</Link></div>}
                         </div> 
                     </div>
                     </>}
-                {/* {token ? <div onClick={() => logout()} className='headerItem'><Link to={'../'}>Выйти</Link></div> : <div className='headerItem'><Link to={'login'}>Войти</Link></div>} */}
             </header>
     )
 }

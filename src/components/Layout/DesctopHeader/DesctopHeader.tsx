@@ -1,7 +1,11 @@
+import React, { useEffect, useState } from 'react';
 import styles from '../Layout.module.scss'
 import { Link } from "react-router-dom";
-
-export const DesctopHeader = () => {
+interface DesctopHeaderProps {
+    logout: Function,
+    token: string | null
+}
+export const DesctopHeader: React.FC<DesctopHeaderProps> = ({token, logout}) => {
 
     return(
         <header className={styles.appHeader} >
@@ -12,7 +16,7 @@ export const DesctopHeader = () => {
                 <div className={styles.headerItem}><Link to={'page/anime'}>Аниме</Link></div>
                 <div className={styles.headerItem}><Link to={'page/animated-series'}>Мультфильмы</Link></div>
                 <div className={styles.headerItem}><Link to={'page/tv-show'}>Тв-щоу</Link></div>
-                {/* {token ? <div onClick={() => logout()} className='headerItem'><Link to={'../'}>Выйти</Link></div> : <div className='headerItem'><Link to={'login'}>Войти</Link></div>} */}
+                {token ? <div onClick={() => logout()} className={styles.headerItem}>Выйти</div> : <div className={styles.headerItem}><Link to={'login'}>Войти</Link></div>}
             </header>
     )
 }

@@ -8,7 +8,6 @@ import {useParams} from 'react-router-dom';
 import { GridOfTitles } from '../GridOfTitles/GridOfTitles';
 import { ErorrPage } from '../ErorrPage/ErorrPage';
 
-    // youTrack jira 
 interface dataInterface {
     year: string;
     genres: string;
@@ -18,7 +17,7 @@ interface dataInterface {
     type: string | undefined
 }
 
-const TypePage: React.FC = () => {
+export const TypePage: React.FC = () => {
 
     const [ params, setParams ] = useState<dataInterface>({
         year: '2000',
@@ -43,5 +42,3 @@ const TypePage: React.FC = () => {
         </div>
     )
 }
-
-export default TypePage;

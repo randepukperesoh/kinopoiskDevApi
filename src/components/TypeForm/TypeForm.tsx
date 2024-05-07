@@ -14,7 +14,7 @@ interface dataInterface {
     limit: string;
     type: string
 }
-    // использовать yup
+
 export const TypeForm: React.FC<{setParams: Function}> = ({setParams}) => {
 
     const { register, handleSubmit} = useForm<dataInterface>({
