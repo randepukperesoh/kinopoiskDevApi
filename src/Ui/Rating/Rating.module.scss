@@ -1,0 +1,12 @@
+.rating {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  text-align: left;
+  padding: 0 15px;
+
+  &_stars {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

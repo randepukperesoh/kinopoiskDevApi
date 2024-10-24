@@ -1,0 +1,25 @@
+.card {
+  width: 90%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  gap: 20px;
+  display: flex;
+  box-shadow: 0 0 20px 0 rgba(#aca8a8, 0.5);
+  &_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &_label {
+      font-weight: 600;
+      font-size: 18px;
+    }
+    &_button {
+      background-color: #aca8a8;
+      color: #020024;
+      box-shadow: 0 0 20px 0 rgba(#aca8a8, 0.5);
+      border-radius: 10px;
+    }
+  }
+}

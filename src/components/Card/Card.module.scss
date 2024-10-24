@@ -1,31 +1,10 @@
-.cardWrapper{
-    height: 200px;
-    width: 150px;
-    position: relative;
-    color: black;
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 5px;
 }
-
-.cardWrapper img{
-    margin: 0 auto;
-    border-radius: 13px;
+.link {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
 }
-.link{
-    display: block;
-    width: max-content;
-}
-// .cardWrapper img:hover{
-//     animation-duration: 0.5s;
-//     animation-name: upCard;
-//     width: 135px;
-//     height: 200px;
-// }
-// @keyframes upCard {
-//     from {
-//         width: 130px;
-//         height: 195px;
-//     }
-//     to{
-//         width: 135px;
-//         height: 200px;
-//     }
-// }

@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+
+  &_numbers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+  }
+
+  &_button {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+  }
+}
+.popa {
+  background-color: red;
+}

@@ -1,0 +1,74 @@
+.title {
+  padding: 20px 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media screen and (width > 675px) {
+    padding: 20px 10%;
+  }
+
+  &_img {
+    width: 300px;
+    height: 450px;
+
+    box-shadow: 0 0 10px 0 rgba(#aca8a8, 0.99);
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(#aca8a8, 0.5);
+
+    &_label {
+      font-size: 18px;
+    }
+
+    &_smallInfo {
+      justify-content: space-around;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &_rating {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(#aca8a8, 0.5);
+  }
+
+  &_watch {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(#aca8a8, 0.5);
+
+    &_card {
+    }
+  }
+
+  &_personsBlock {
+    padding: 10px 50px 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(#aca8a8, 0.5);
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,22 @@
+.typePage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  &_filters {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(#aca8a8, 0.6);
+  }
+  &_titles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+}
